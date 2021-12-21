@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var line ="";
+    var rows = 15;
+    var spaces = rows - 1;
+
+    // Loop to control rows
+    for(var a = 0; a < rows; a++){
+
+        // Loop to draw spaces
+        for(var i = 0; i < spaces; i++){
+            line += "-";
+        }
+
+        for(var b = 0; b < a+1; b++){
+            line += "* ";
+        }
+        console.log(line);
+        line = "";
+        spaces -= 1;
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
