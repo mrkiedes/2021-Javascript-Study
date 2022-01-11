@@ -1,10 +1,26 @@
+<!--
+    Want to link a button to make a specific image disappear
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Disappearing Image</title>
+    <script>
+        function byeBye(){
+            var image = document.getElementById("meme");
+            image.style.display = "none";
+
+            var surpriseImage = document.getElementById("surprise");
+            surpriseImage.style.display = "block";
+        }
+    </script>
 </head>
 <body>
+<button type="button" onClick="byeBye()">Click for a surprise!</button>
+<img id="meme" src="img/matrixMeme.jpg" width="200" />
+<img id="surprise" src="img/matrixFlying.jpg" width = "200" style="display:none" />
+
 
 </body>
 </html>
