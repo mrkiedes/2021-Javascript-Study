@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Values</title>
+    <script>
+        function add(){
+            // Declare HTML elements as variables
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            // Calculate Sum
+            var sum = parseFloat(num1.value) + parseFloat(num2.value);
+
+            // Output the result
+            output.innerHTML = sum;
+
+        }
+        function sub(){
+            // Declare HTML elements as variables
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            // Calculate Sum
+            var sum = parseFloat(num1.value) - parseFloat(num2.value);
+
+            // Output the result
+            output.innerHTML = sum;
+
+        }
+        function mult(){
+            // Declare HTML elements as variables
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            // Calculate Sum
+            var sum = parseFloat(num1.value) * parseFloat(num2.value);
+
+            // Output the result
+            output.innerHTML = sum;
+
+        }
+        function div(){
+            // Declare HTML elements as variables
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            // Calculate Sum
+            var sum = parseFloat(num1.value) / parseFloat(num2.value);
+
+            // Output the result
+            output.innerHTML = sum;
+
+        }
+    </script>
+</head>
+<body>
+First Number: <input type="text" name="num1" id="num1"><br />
+Second Number: <input type="text" name="num2" id="num2"><br />
+<button name="add" onClick="add()">Add the Numbers</button><br />
+<button name="sub" onClick="sub()">Subtract the Numbers</button><br />
+<button name="mult" onClick="mult()">Multiply the Numbers</button><br />
+<button name="div" onClick="div()">Divide the Numbers</button><br />
+<div id="output">Answer will appear here.</div>
+</body>
+</html>
