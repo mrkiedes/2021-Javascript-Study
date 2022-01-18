@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marriage of UI and Programming</title>
+    <script>
+        function grades(){
+            var yrs = document.getElementById("yrs");
+            if (yrs.value == 9){
+                alert("Freshman!");
+            }
+            if (yrs.value == 10){
+                alert("Sohpomore!");
+            }
+            if (yrs.value == 11){
+                alert("Junior!");
+            }
+            if (yrs.value == 12){
+                alert("Senior!");
+            }
+            if (yrs.value == 13){
+                alert("Stop Crying, its ok!");
+            }
+
+        }
+    </script>
+</head>
+<body>
+<h1>What is your High School Classifaction Status</h1>
+How many years have you been in school? <br />
+<input type="text" name="yrs" id="yrs" onChange="grades()" /><br />
+
+</body>
+</html>
